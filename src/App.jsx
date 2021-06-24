@@ -62,7 +62,7 @@ export function App() {
                         </form>
                     </div>
                     <footer className="footer fHome">
-                        <h2 className="title">Neardy Places</h2>
+                        <h2 className="title">Nearby Places</h2>
                         <p className="copyright">All rights reserved &copy; 2021</p>
                     </footer>
                 </Route>
