@@ -117,7 +117,7 @@ export function Places({newPlace}) {
                         </div>
                     </main>
                     <footer className="footer">
-                        <h2 className="title">Neardy Places</h2>
+                        <h2 className="title">Nearby Places</h2>
                         <p className="copyright">All rights reserved &copy; 2021</p>
                     </footer>
                 </Route>
