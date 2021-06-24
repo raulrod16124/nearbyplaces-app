@@ -41,7 +41,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## .env
 
-You will need to create a .env document in the project and add there the API KEY from your Google Cloud Platform account and also the Client_id and Client_secret from your [FourSquare/Developer](https://developer.foursquare.com) account. Then you will get correctly the data.
+You will need to create a .env document in the project and add there the API KEY from your [Google Cloud Platform](https://cloud.google.com) account and also the Client_id and Client_secret from your [FourSquare/Developer](https://developer.foursquare.com) account. Then you will get correctly the data.
 
 ## Learn More
 
