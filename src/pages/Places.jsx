@@ -101,27 +101,21 @@ export function Places({newPlace}) {
     }
 
     return (
-        <Router>
-            <Switch>
-                <Route path="/places" exact>
-                    <header className="header2">
-                        <h2 className="title">Nearby Places</h2>
-                    </header>
-                    <main className="main"> 
-                        <div className="contentAddress">
-                            <p className="addressAside"><i className="fas fa-map-marker-alt"></i> {localAddress.newStreet}, {localAddress.province}</p>
-                            <button type="button" className="editAddress" onClick={handleResetDataLocalStore}>Change Address <i className="fas fa-pencil-alt"></i></button>
-                        </div>
-                        <div className="showPlaces">
-                            <PlacesList className="List" placesArray={places} dataPlaceSelected={dataPlaceSelected} locationPlace={locationPlace}/>
-                        </div>
-                    </main>
-                    <footer className="footer">
-                        <h2 className="title">Nearby Places</h2>
-                        <p className="copyright">All rights reserved &copy; 2021</p>
-                    </footer>
-                </Route>
-            </Switch>
-        </Router>
+          <header className="header2">
+               <h2 className="title">Nearby Places</h2>
+          </header>
+          <main className="main"> 
+              <div className="contentAddress">
+                 <p className="addressAside"><i className="fas fa-map-marker-alt"></i> {localAddress.newStreet}, {localAddress.province}</p>
+                 <button type="button" className="editAddress" onClick={handleResetDataLocalStore}>Change Address <i className="fas fa-pencil-alt"></i></button>
+              </div>
+              <div className="showPlaces">
+                  <PlacesList className="List" placesArray={places} dataPlaceSelected={dataPlaceSelected} locationPlace={locationPlace}/>
+              </div>
+          </main>
+         <footer className="footer">
+              <h2 className="title">Nearby Places</h2>
+              <p className="copyright">All rights reserved &copy; 2021</p>
+         </footer>
     )
 }
