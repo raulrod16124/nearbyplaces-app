@@ -67,7 +67,7 @@ export  function PageDetails() {
     return (
         <Fragment>
             <header className="header2">
-                <h2 className="title tDetails">Neardy Places</h2>
+                <h2 className="title tDetails">Nearby Places</h2>
             </header>
 
             <div className="contentPlaceDetails">
