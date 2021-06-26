@@ -105,7 +105,7 @@ export function Places({newPlace}) {
             <Switch>
                 <Route path="/places" exact>
                     <header className="header2">
-                        <h2 className="title">Neardy Places</h2>
+                        <h2 className="title">Nearby Places</h2>
                     </header>
                     <main className="main"> 
                         <div className="contentAddress">
