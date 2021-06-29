@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from 'react'
+import React,{ useState, useEffect, Fragment } from 'react'
 import axios from 'axios';
 import {
     BrowserRouter as Router,
@@ -101,21 +101,24 @@ export function Places({newPlace}) {
     }
 
     return (
-          <header className="header2">
-               <h2 className="title">Nearby Places</h2>
-          </header>
-          <main className="main"> 
-              <div className="contentAddress">
-                 <p className="addressAside"><i className="fas fa-map-marker-alt"></i> {localAddress.newStreet}, {localAddress.province}</p>
-                 <button type="button" className="editAddress" onClick={handleResetDataLocalStore}>Change Address <i className="fas fa-pencil-alt"></i></button>
-              </div>
-              <div className="showPlaces">
-                  <PlacesList className="List" placesArray={places} dataPlaceSelected={dataPlaceSelected} locationPlace={locationPlace}/>
-              </div>
-          </main>
-         <footer className="footer">
-              <h2 className="title">Nearby Places</h2>
-              <p className="copyright">All rights reserved &copy; 2021</p>
-         </footer>
+
+        <Fragment>
+            <header className="header2">
+                <h2 className="title">Nearby Places</h2>
+            </header>
+            <main className="main"> 
+                <div className="contentAddress">
+                    <p className="addressAside"><i className="fas fa-map-marker-alt"></i> {localAddress.newStreet}, {localAddress.province}</p>
+                    <button type="button" className="editAddress" onClick={handleResetDataLocalStore}>Change Address <i className="fas fa-pencil-alt"></i></button>
+                </div>
+                <div className="showPlaces">
+                    <PlacesList className="List" placesArray={places} dataPlaceSelected={dataPlaceSelected} locationPlace={locationPlace}/>
+                </div>
+            </main>
+            <footer className="footer">
+                <h2 className="title">Nearby Places</h2>
+                <p className="copyright">All rights reserved &copy; 2021</p>
+            </footer>
+        </Fragment>
     )
 }
